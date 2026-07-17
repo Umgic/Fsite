@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="무영생존기 세계관, 조직, 등장인물, 세계관 기본상식 소개 페이지" />
-  <meta name="theme-color" content="#0a0611" />
+  <meta name="description" content="무영생존기 세계관, 조직, 등장인물, 기본상식 소개 페이지" />
+  <meta name="theme-color" content="#09050f" />
   <title>무영생존기 | 세계관 소개</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,18 +17,18 @@
   <div class="glow glow-green" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="logo" href="#top">
+    <a class="logo" href="#top" aria-label="맨 위로 이동">
       <span class="logo-mark">霧</span>
       <span>무영생존기</span>
     </a>
     <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav">
+    <nav class="nav" aria-label="페이지 바로가기">
       <a href="#world">세계관</a>
       <a href="#factions">조직</a>
       <a href="#characters">등장인물</a>
-      <a href="#lore">세계관 기본상식</a>
+      <a href="#lore">기본상식</a>
     </nav>
   </header>
 
@@ -38,15 +38,19 @@
       <div class="hero-overlay"></div>
       <div class="graffiti-word graffiti-one">SURVIVE</div>
       <div class="graffiti-word graffiti-two">MUYEONG</div>
-
       <div class="hero-content reveal">
         <p class="eyebrow">UNDERWORLD SURVIVAL SIMULATOR</p>
-        <h1>무영<br><em>생존기</em></h1>
+        <h1>무영생존기</h1>
         <p>
           최약체 신생 조직 <strong>고양이냥냥파</strong>의 행동대장이 되어,
           무영시를 지배하는 다섯 조직 사이에서 살아남아라.
         </p>
-        <a class="hero-button" href="#world">세계관 보기</a>
+        <div class="hero-links" aria-label="주요 구역 바로가기">
+          <a href="#world">세계관</a>
+          <a href="#factions">조직</a>
+          <a href="#characters">등장인물</a>
+          <a href="#lore">기본상식</a>
+        </div>
       </div>
     </section>
 
@@ -60,47 +64,31 @@
         </p>
       </div>
 
-      <div class="world-banner reveal">
-        <img src="https://raw.githubusercontent.com/Umgic/F/main/F1027.png" alt="무영시" />
-        <div>
+      <article class="map-panel reveal">
+        <img src="https://raw.githubusercontent.com/Umgic/F/main/F1023.png" alt="무영시 5개 지구 지도" />
+        <div class="map-copy">
           <span>THE CITY OF FOG AND SHADOWS</span>
-          <h3>무영시</h3>
-          <p>낮에는 금융과 산업의 중심지, 밤에는 조직과 거래가 도시를 지배하는 거대한 범죄도시.</p>
+          <h3>무영시 지도</h3>
+          <p>아래 지구 이름을 눌러 각 지역의 특징과 지배 조직을 확인할 수 있다.</p>
         </div>
+      </article>
+
+      <div class="district-tabs reveal" role="tablist" aria-label="무영시 지구 선택">
+        <button class="district-tab active" type="button" role="tab" aria-selected="true" data-district="bukcheon">북천지구</button>
+        <button class="district-tab" type="button" role="tab" aria-selected="false" data-district="yeongsin">영신지구</button>
+        <button class="district-tab" type="button" role="tab" aria-selected="false" data-district="seorim">서림지구</button>
+        <button class="district-tab" type="button" role="tab" aria-selected="false" data-district="cheolhwan">철환지구</button>
+        <button class="district-tab" type="button" role="tab" aria-selected="false" data-district="gaehwa">개화지구</button>
       </div>
 
-      <div class="district-grid">
-        <article class="district-card reveal">
-          <span>01</span>
-          <h3>북천지구</h3>
-          <p>정치·행정·언론 중심지. 대기업 본사와 고위층이 많으며 정보와 권력으로 움직이는 세력이 장악한다.</p>
-          <small>지배 조직 · 청룡회</small>
-        </article>
-        <article class="district-card reveal">
-          <span>02</span>
-          <h3>영신지구</h3>
-          <p>호텔·클럽·고급 상권이 밀집한 화려한 지역. 이면에서는 유흥업·사채·불법 금융이 돌아간다.</p>
-          <small>지배 조직 · 영신연합</small>
-        </article>
-        <article class="district-card reveal">
-          <span>03</span>
-          <h3>서림지구</h3>
-          <p>대학·문화거리·IT 기업이 많은 젊은 지역. 해커·정보상·해결사 등 두뇌형 세력이 활동한다.</p>
-          <small>지배 조직 · 진아파</small>
-        </article>
-        <article class="district-card reveal">
-          <span>04</span>
-          <h3>철환지구</h3>
-          <p>공장·항구·물류창고가 밀집한 노동자 지역. 밀수품과 불법 물건이 도시로 유입되는 통로다.</p>
-          <small>지배 조직 · 철환파</small>
-        </article>
-        <article class="district-card reveal">
-          <span>05</span>
-          <h3>개화지구</h3>
-          <p>재개발에서 밀려난 낙후 구도심. 빈민가·암시장·불법 도박장이 뒤엉킨 무법지대다.</p>
-          <small>지배 조직 · 개화조</small>
-        </article>
-      </div>
+      <article class="district-detail reveal" id="district-detail" aria-live="polite">
+        <div class="district-number">01</div>
+        <div>
+          <span id="district-owner">지배 조직 · 청룡회</span>
+          <h3 id="district-name">북천지구</h3>
+          <p id="district-description">정치·행정·언론 중심지. 대기업 본사와 고위층이 많으며 정보와 권력으로 움직이는 세력이 장악한다.</p>
+        </div>
+      </article>
     </section>
 
     <section id="factions" class="section faction-section">
@@ -112,63 +100,28 @@
 
       <div class="faction-list">
         <article class="faction-row reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1028.png" alt="청룡회 본거지" />
-          <div class="faction-copy cyan">
-            <span>북천지구</span>
-            <h3>청룡회</h3>
-            <p>정·재계와 결탁한 권력형 조직. 정치권·언론·대기업 인맥으로 상대를 압박한다.</p>
-            <ul><li>정보와 권력</li><li>요정가루 연구</li><li>청운궁 카지노</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1028.png" alt="청룡회 본거지" /></div>
+          <div class="faction-copy cyan"><span>북천지구</span><h3>청룡회</h3><p>정·재계와 결탁한 권력형 조직. 정치권·언론·대기업 인맥으로 상대를 압박한다.</p><ul><li>정보와 권력</li><li>요정가루 연구</li><li>청운궁 카지노</li></ul></div>
         </article>
-
         <article class="faction-row reverse reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1029.png" alt="영신연합 본거지" />
-          <div class="faction-copy red">
-            <span>영신지구</span>
-            <h3>영신연합</h3>
-            <p>호텔·클럽·사채·불법 금융을 장악한 유흥업 조직들의 연합체.</p>
-            <ul><li>유흥 산업</li><li>불법 금융</li><li>요정가루 유통</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1029.png" alt="영신연합 본거지" /></div>
+          <div class="faction-copy red"><span>영신지구</span><h3>영신연합</h3><p>호텔·클럽·사채·불법 금융을 장악한 유흥업 조직들의 연합체.</p><ul><li>유흥 산업</li><li>불법 금융</li><li>요정가루 유통</li></ul></div>
         </article>
-
         <article class="faction-row reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1030.png" alt="진아파 본거지" />
-          <div class="faction-copy silver">
-            <span>서림지구</span>
-            <h3>진아파</h3>
-            <p>해커·정보상·브로커를 거느리며 정보 거래와 협박에 능한 두뇌형 조직.</p>
-            <ul><li>해킹</li><li>정보 거래</li><li>공작과 협박</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1030.png" alt="진아파 본거지" /></div>
+          <div class="faction-copy silver"><span>서림지구</span><h3>진아파</h3><p>해커·정보상·브로커를 거느리며 정보 거래와 협박에 능한 두뇌형 조직.</p><ul><li>해킹</li><li>정보 거래</li><li>공작과 협박</li></ul></div>
         </article>
-
         <article class="faction-row reverse reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1031.png" alt="철환파 본거지" />
-          <div class="faction-copy orange">
-            <span>철환지구</span>
-            <h3>철환파</h3>
-            <p>항구와 물류를 장악한 의리 중심 조직. 밀수·운송·인력 사업이 주력이다.</p>
-            <ul><li>철환항구</li><li>밀수와 운송</li><li>강한 결속력</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1031.png" alt="철환파 본거지" /></div>
+          <div class="faction-copy orange"><span>철환지구</span><h3>철환파</h3><p>항구와 물류를 장악한 의리 중심 조직. 밀수·운송·인력 사업이 주력이다.</p><ul><li>철환항구</li><li>밀수와 운송</li><li>강한 결속력</li></ul></div>
         </article>
-
         <article class="faction-row reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1032.png" alt="개화조 본거지" />
-          <div class="faction-copy yellow">
-            <span>개화지구</span>
-            <h3>개화조</h3>
-            <p>암시장과 불법 도박장을 지배한다. 거칠고 불안정하지만 싸움과 생존력이 강하다.</p>
-            <ul><li>암시장</li><li>홍련장 카지노</li><li>시가전</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1032.png" alt="개화조 본거지" /></div>
+          <div class="faction-copy yellow"><span>개화지구</span><h3>개화조</h3><p>암시장과 불법 도박장을 지배한다. 거칠고 불안정하지만 싸움과 생존력이 강하다.</p><ul><li>암시장</li><li>홍련장 카지노</li><li>시가전</li></ul></div>
         </article>
-
         <article class="faction-row reverse reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F1033.png" alt="고양이냥냥파 본거지" />
-          <div class="faction-copy green">
-            <span>철환지구 창고 골목</span>
-            <h3>고양이냥냥파</h3>
-            <p>조직원 8명의 신생 최약체 조직. 자금도 시설도 부족하지만 두목의 정보력은 정체불명이다.</p>
-            <ul><li>신생 조직</li><li>플레이어 소속</li><li>높은 성장 가능성</li></ul>
-          </div>
+          <div class="wide-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1033.png" alt="고양이냥냥파 본거지" /></div>
+          <div class="faction-copy green"><span>철환지구 창고 골목</span><h3>고양이냥냥파</h3><p>조직원 8명의 신생 최약체 조직. 자금도 시설도 부족하지만 두목의 정보력은 정체불명이다.</p><ul><li>신생 조직</li><li>플레이어 소속</li><li>높은 성장 가능성</li></ul></div>
         </article>
       </div>
     </section>
@@ -177,105 +130,65 @@
       <div class="section-heading reveal">
         <p class="eyebrow">CHARACTERS</p>
         <h2>등장인물</h2>
-        <p>각 조직의 판도를 움직이는 핵심 인물들.</p>
+        <p>조직 순서대로 만나는 무영시의 핵심 인물들.</p>
       </div>
 
       <div class="character-grid">
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F12.png" alt="네코다요" />
-          <div><span>고양이냥냥파 두목</span><h3>네코다요</h3><p>건방지고 짓궂은 어린 두목. 출처를 밝히지 않는 범상치 않은 정보 수집 능력을 가졌다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F26.png" alt="임나리" />
-          <div><span>냥꼬리 요원</span><h3>임나리</h3><p>겁이 많지만 위기에서는 머리가 빠르게 돌아간다. 요정가루 특수체질과 뛰어난 사격 능력을 보유했다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F40.png" alt="강미라" />
-          <div><span>철환파 두목</span><h3>강미라</h3><p>조직원을 가족처럼 여기며 의리와 약속을 중시한다. 철환지구의 사업과 질서를 지키는 강자.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F57.png" alt="차세라" />
-          <div><span>영신연합 부두목</span><h3>차세라</h3><p>자신감과 자존감이 지나치게 높다. 입원한 아버지를 대신해 영신연합을 이끈다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F72.png" alt="서이진" />
-          <div><span>진아파 두목</span><h3>서이진</h3><p>감정을 배제하고 기계처럼 판단한다. 판을 설계해 어부지리를 취하는 데 능하다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F87.png" alt="백진영" />
-          <div><span>청룡회 두목</span><h3>백진영</h3><p>자신을 본좌라 부르는 지능적인 권력자. 요정가루 특이체질로 젊음을 유지한다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F102.png" alt="한재희" />
-          <div><span>개화조 두목</span><h3>한재희</h3><p>말과 행동이 거칠지만 조직원을 친구처럼 대한다. 부패 기업과 정치인의 몰락을 목표로 한다.</p></div>
-        </article>
-        <article class="character-card reveal">
-          <img src="https://raw.githubusercontent.com/Umgic/F/main/F106.png" alt="황도진" />
-          <div><span>무영시 시장</span><h3>황도진</h3><p>유흥을 즐기는 부패 정치인. 청룡회의 지원으로 시장이 되었고 그들의 범죄를 덮어준다.</p></div>
-        </article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F73.png" alt="백진영 무표정" /><div><span>청룡회 두목</span><h3>백진영</h3><p>자신을 본좌라 부르는 지능적인 권력자. 요정가루 특이체질로 젊음을 유지한다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F107.png" alt="황도진" /><div><span>무영시 시장 · 청룡회 연계</span><h3>황도진</h3><p>유흥을 즐기는 부패 정치인. 청룡회의 지원으로 시장이 되었고 그들의 범죄를 덮어준다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F57.png" alt="차세라" /><div><span>영신연합 부두목</span><h3>차세라</h3><p>자신감과 자존감이 지나치게 높다. 입원한 아버지를 대신해 영신연합을 이끈다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F72.png" alt="서이진" /><div><span>진아파 두목</span><h3>서이진</h3><p>감정을 배제하고 기계처럼 판단한다. 판을 설계해 어부지리를 취하는 데 능하다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F40.png" alt="강미라" /><div><span>철환파 두목</span><h3>강미라</h3><p>조직원을 가족처럼 여기며 의리와 약속을 중시한다. 철환지구의 사업과 질서를 지키는 강자.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F102.png" alt="한재희" /><div><span>개화조 두목</span><h3>한재희</h3><p>말과 행동이 거칠지만 조직원을 친구처럼 대한다. 부패 기업과 정치인의 몰락을 목표로 한다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F12.png" alt="네코다요" /><div><span>고양이냥냥파 두목</span><h3>네코다요</h3><p>건방지고 짓궂은 어린 두목. 출처를 밝히지 않는 범상치 않은 정보 수집 능력을 가졌다.</p></div></article>
+        <article class="character-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F26.png" alt="임나리" /><div><span>고양이냥냥파 냥꼬리요원</span><h3>임나리</h3><p>겁이 많지만 위기에서는 머리가 빠르게 돌아간다. 요정가루 특수체질과 뛰어난 사격 능력을 보유했다.</p></div></article>
       </div>
     </section>
 
     <section id="lore" class="section lore-section">
       <div class="section-heading reveal">
         <p class="eyebrow">WORLD BASICS</p>
-        <h2>세계관 기본상식</h2>
-        <p>무영시 뒷세계를 이해하기 위해 알아야 할 기본 요소.</p>
+        <h2>기본상식</h2>
+        <p>무영시에서 가장 널리 쓰이며 동시에 가장 많은 갈등을 만드는 물질.</p>
       </div>
 
       <article class="dust-feature reveal">
-        <img src="https://raw.githubusercontent.com/Umgic/F/main/F1020.png" alt="요정가루" />
-        <div>
-          <span>ILLEGAL SUBSTANCE</span>
+        <div class="wide-image dust-image"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1020.png" alt="요정가루" /></div>
+        <div class="dust-copy">
+          <span>FAIRY DUST</span>
           <h3>요정가루</h3>
           <p>
-            흡입하면 강한 행복감과 고양감, 반짝이는 시야를 느끼며 눈가와 주변에도 빛이 나타나는 불법 약물.
-            중독성이 있으며 농도가 높아질수록 의존과 금단, 독성이 급격히 강해진다.
+            집중, 수면, 의료 보조, 유흥, 전투 전 각성 등 다양한 목적으로 사용되는 무영시의 특수 약품이다.
+            범죄 조직만의 물건처럼 보이지만 실제로는 일반인들 사이에서도 생각보다 널리 사용된다.
           </p>
+          <p>
+            저농도 제품 일부는 합법적으로 판매되며, 농도와 사용 목적에 따라 합법과 불법의 경계가 나뉜다.
+            고농도 제품이나 허가되지 않은 제조·유통은 조직들의 주요 수익원이 된다.
+          </p>
+          <aside class="notice">
+            <strong>주의사항</strong>
+            <p>이 세계관에는 현실의 마약은 존재하지 않습니다. 요정가루의 부작용은 약을 과하게 복용했을 때 나타나는 부작용과 비슷하다고 생각해 주세요.</p>
+          </aside>
         </div>
       </article>
+    </section>
 
-      <div class="lore-grid">
-        <article class="lore-card reveal">
-          <strong>3–12%</strong>
-          <h4>저농도</h4>
-          <p>집중·수면·의료 목적으로 사용되는 범위.</p>
-        </article>
-        <article class="lore-card reveal">
-          <strong>15–35%</strong>
-          <h4>일반 유통품</h4>
-          <p>무영시에서 가장 흔하게 거래되는 농도.</p>
-        </article>
-        <article class="lore-card reveal">
-          <strong>36–55%</strong>
-          <h4>강력품</h4>
-          <p>일부 시장에서만 유통되는 고효능 제품.</p>
-        </article>
-        <article class="lore-card reveal">
-          <strong>56–80%</strong>
-          <h4>위험 농도</h4>
-          <p>특이체질만 버틸 수 있으며 일반인에게는 독.</p>
-        </article>
-        <article class="lore-card reveal">
-          <strong>81%+</strong>
-          <h4>치명 농도</h4>
-          <p>체질과 무관하게 생명을 위협한다.</p>
-        </article>
-      </div>
-
-      <div class="facility-grid">
-        <article class="facility-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1015.png" alt="요정가루 제조실"><div><h4>요정가루 제조실</h4><p>청룡회는 연구, 영신연합과 개화조는 유통을 위해 보유한다.</p></div></article>
-        <article class="facility-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1014.png" alt="카지노"><div><h4>카지노</h4><p>청룡회의 청운궁과 개화조의 홍련장이 대표적이다.</p></div></article>
-        <article class="facility-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1013.png" alt="대저택"><div><h4>대저택</h4><p>정치인 또는 청룡회 두목급 인물만 소유할 수 있는 권력의 상징.</p></div></article>
-        <article class="facility-card reveal"><img src="https://raw.githubusercontent.com/Umgic/F/main/F1016.png" alt="경매장"><div><h4>비밀 경매장</h4><p>정치인과 대기업 고위직이 모여 보석·미술품·비밀 거래를 진행한다.</p></div></article>
+    <section class="ending-section" aria-label="이야기의 시작">
+      <div class="ending-card reveal">
+        <p class="eyebrow">YOUR STORY BEGINS HERE</p>
+        <h2>최약체 조직의<br>첫 번째 하루.</h2>
+        <p class="ending-copy">네코다요가 낡은 책상 위로 정체불명의 서류봉투를 밀어 놓는다.<br>오늘의 선택이 고양이냥냥파의 미래를 결정한다.</p>
+        <div class="dialogue">
+          <span>💬 네코다요</span>
+          <blockquote>“냥젤리부관, 우리도 슬슬 이름을 알려볼까?”</blockquote>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <strong>무영생존기</strong>
-    <span>네온 그래피티 세계관 소개 페이지</span>
-    <a href="#top">TOP ↑</a>
+    <a href="#top">맨 위로 ↑</a>
   </footer>
 
   <script src="script.js"></script>
