@@ -1,22 +1,23 @@
-# 무영생존기 소개 사이트
+# 무영생존기 소개 사이트 v2
 
-GitHub Pages에 바로 올릴 수 있는 정적 웹사이트입니다.
+요청한 피드백을 반영한 GitHub Pages용 정적 웹사이트입니다.
 
-## 파일 구성
-- `index.html` : 메인 페이지
-- `style.css` : 디자인 및 반응형 스타일
-- `script.js` : 지구/캐릭터/요정가루 인터랙션
+## 반영 내용
+- 보라 + 검정 + 네온 초록 그래피티 디자인
+- 상단 상태창 제거
+- 메뉴를 세계관 / 조직 / 등장인물 / 세계관 기본상식으로 정리
+- 모든 지구 설명을 클릭 없이 카드형으로 노출
+- 지구 이름을 전체 명칭으로 표기
+- 각 조직의 본거지 이미지 적용
+- 조직원 이미지는 사용하지 않음
+- 등장인물을 클릭 없이 카드형으로 노출
+- 비웃는 표정 우선, 없는 경우 자신감 표정 사용
+- 요정가루 이미지와 농도 설명 추가
 
-## GitHub Pages 배포 방법
-1. GitHub에서 새 저장소를 만듭니다.
-2. 이 폴더 안의 파일 3개를 저장소 최상단에 업로드합니다.
-3. 저장소의 `Settings` → `Pages`로 이동합니다.
-4. `Build and deployment`의 Source를 `Deploy from a branch`로 선택합니다.
-5. Branch를 `main`, 폴더를 `/ (root)`로 선택하고 저장합니다.
-6. 잠시 뒤 표시되는 주소로 접속합니다.
-
-## 이미지
-캐릭터 이미지는 아래 형식을 사용합니다.
-`https://raw.githubusercontent.com/Umgic/F/main/F숫자.png`
-
-이미지가 없는 번호이거나 저장소가 비공개이면 이미지가 보이지 않을 수 있습니다.
+## GitHub Pages 배포
+1. ZIP 압축을 풉니다.
+2. `index.html`, `style.css`, `script.js`를 GitHub 저장소 최상단에 업로드합니다.
+3. `Settings → Pages`
+4. Source: `Deploy from a branch`
+5. Branch: `main`, Folder: `/ (root)`
+6. Save
