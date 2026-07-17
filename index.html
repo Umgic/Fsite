@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="무영생존기 세계관, 조직, 캐릭터 소개 페이지" />
+  <meta name="theme-color" content="#07090d" />
+  <title>무영생존기 | 뒷세계 생존 시뮬레이터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="무영생존기 홈">
+      <span class="logo-mark">霧</span>
+      <span>무영생존기</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#world">세계관</a>
+      <a href="#factions">조직</a>
+      <a href="#characters">캐릭터</a>
+      <a href="#fairy-dust">요정가루</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">UNDERWORLD SURVIVAL SIMULATOR</p>
+        <h1>안개 속에서<br><em>조직을 키워라.</em></h1>
+        <p class="hero-description">
+          대한민국 수도권의 거대 도시, 무영시.<br>
+          최약체 신생 조직 <strong>고양이냥냥파</strong>의 행동대장이 되어
+          다섯 조직의 틈에서 살아남아라.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#world">세계관 살펴보기</a>
+          <a class="button ghost" href="#characters">등장인물 보기</a>
+        </div>
+      </div>
+
+      <aside class="status-card reveal">
+        <div class="status-line">
+          <span>2026년 7월 6일</span>
+          <strong>MON</strong>
+        </div>
+        <div class="clock">09<span>:</span>32</div>
+        <p>현재 위치</p>
+        <h2>철환지구 · 창고 골목</h2>
+        <div class="status-tags">
+          <span>조직원 8명</span>
+          <span>등급 없음</span>
+          <span>인지도 0</span>
+        </div>
+      </aside>
+
+      <div class="scroll-hint" aria-hidden="true">SCROLL <span></span></div>
+    </section>
+
+    <section id="world" class="section world-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE CITY OF FOG AND SHADOWS</p>
+        <h2>무영시 <small>霧影市</small></h2>
+        <p>
+          인구 약 1,250만 명. 거대한 강을 중심으로 금융·유흥·IT·공업·물류가
+          발달한 대도시다. 낮에는 번영하고, 밤에는 다섯 조직의 이해관계가 충돌한다.
+        </p>
+      </div>
+
+      <div class="district-map reveal">
+        <button class="district active" data-district="북천지구">
+          <span>01</span><strong>북천</strong><small>권력·언론</small>
+        </button>
+        <button class="district" data-district="영신지구">
+          <span>02</span><strong>영신</strong><small>유흥·금융</small>
+        </button>
+        <button class="district" data-district="서림지구">
+          <span>03</span><strong>서림</strong><small>IT·정보</small>
+        </button>
+        <button class="district" data-district="철환지구">
+          <span>04</span><strong>철환</strong><small>항구·물류</small>
+        </button>
+        <button class="district" data-district="개화지구">
+          <span>05</span><strong>개화</strong><small>암시장·도박</small>
+        </button>
+      </div>
+
+      <article class="district-detail reveal" id="districtDetail">
+        <div>
+          <p class="detail-number">DISTRICT 01</p>
+          <h3>북천지구</h3>
+        </div>
+        <p>
+          정치·행정·언론의 중심지. 대기업 본사와 고위층이 밀집해 있으며,
+          총보다 정보와 인맥이 더 강한 힘을 발휘한다.
+        </p>
+        <span class="territory-owner">지배 조직 · 청룡회</span>
+      </article>
+    </section>
+
+    <section id="factions" class="section faction-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">FIVE POWERS, ONE NEWCOMER</p>
+        <h2>무영시의 조직</h2>
+        <p>도시의 각 지구를 지배하는 5대 조직과, 아무것도 없는 신생 최약체 조직.</p>
+      </div>
+
+      <div class="faction-grid">
+        <article class="faction-card cyan reveal">
+          <div class="faction-index">01</div>
+          <p>북천지구</p>
+          <h3>청룡회</h3>
+          <p>정·재계와 결탁한 권력형 조직. 정치권, 언론, 대기업 인맥을 이용해 상대를 압박한다.</p>
+          <ul><li>정보·권력</li><li>요정가루 연구</li><li>청운궁 카지노</li></ul>
+        </article>
+
+        <article class="faction-card red reveal">
+          <div class="faction-index">02</div>
+          <p>영신지구</p>
+          <h3>영신연합</h3>
+          <p>클럽, 호텔, 사채와 불법 금융을 장악한 유흥업 조직들의 연합체.</p>
+          <ul><li>유흥 산업</li><li>불법 금융</li><li>요정가루 유통</li></ul>
+        </article>
+
+        <article class="faction-card silver reveal">
+          <div class="faction-index">03</div>
+          <p>서림지구</p>
+          <h3>진아파</h3>
+          <p>해커, 정보상, 브로커를 거느린 두뇌형 조직. 협박과 판짜기에 능하다.</p>
+          <ul><li>해킹</li><li>정보 거래</li><li>공작·협박</li></ul>
+        </article>
+
+        <article class="faction-card orange reveal">
+          <div class="faction-index">04</div>
+          <p>철환지구</p>
+          <h3>철환파</h3>
+          <p>항구와 물류를 장악한 의리 중심 조직. 밀수, 운송, 인력 사업이 주력이다.</p>
+          <ul><li>철환항구</li><li>밀수·운송</li><li>강한 결속력</li></ul>
+        </article>
+
+        <article class="faction-card yellow reveal">
+          <div class="faction-index">05</div>
+          <p>개화지구</p>
+          <h3>개화조</h3>
+          <p>암시장과 불법 도박장을 지배한다. 거칠고 불안정하지만 생존력이 강하다.</p>
+          <ul><li>암시장</li><li>홍련장 카지노</li><li>시가전</li></ul>
+        </article>
+
+        <article class="faction-card cat reveal">
+          <div class="faction-index">NEW</div>
+          <p>철환지구 창고 골목</p>
+          <h3>고양이냥냥파</h3>
+          <p>조직원 8명, 시설도 자금도 부족한 신생 최약체 조직. 그러나 두목의 정보력만큼은 정체불명이다.</p>
+          <ul><li>신생 조직</li><li>성장 가능성</li><li>플레이어 소속</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="characters" class="section character-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">KEY PLAYERS</p>
+        <h2>주요 등장인물</h2>
+        <p>조직의 운명을 바꿀 인물들. 카드를 선택하면 상세 정보가 표시된다.</p>
+      </div>
+
+      <div class="character-layout">
+        <div class="character-list reveal" id="characterList"></div>
+        <article class="character-profile reveal" id="characterProfile">
+          <div class="profile-image-wrap">
+            <img id="profileImage" src="https://raw.githubusercontent.com/Umgic/F/main/F1.png" alt="네코다요" />
+            <span class="image-fallback">NO IMAGE</span>
+          </div>
+          <div class="profile-copy">
+            <p class="profile-role" id="profileRole">고양이냥냥파 두목</p>
+            <h3 id="profileName">네코다요</h3>
+            <p class="profile-quote" id="profileQuote">“냥젤리부관, 오늘 일은 전부 맡긴다!”</p>
+            <dl>
+              <div><dt>외모</dt><dd id="profileLooks">작은 키, 검은 단발, 초록·보라 브릿지</dd></div>
+              <div><dt>성격</dt><dd id="profilePersonality">건방지고 짓궂으며 약 올리기를 좋아한다.</dd></div>
+              <div><dt>특징</dt><dd id="profileFeature">출처를 밝히지 않는 범상치 않은 정보 수집 능력의 소유자.</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="fairy-dust" class="section dust-section">
+      <div class="dust-copy reveal">
+        <p class="eyebrow">ILLEGAL SUBSTANCE</p>
+        <h2>요정가루</h2>
+        <p>
+          흡입 시 강한 행복감과 고양감, 반짝이는 시야를 유발하는 무영시 뒷세계의 불법 약물.
+          농도가 높아질수록 효과와 위험성이 급격히 증가한다.
+        </p>
+      </div>
+
+      <div class="concentration reveal">
+        <div class="concentration-bar">
+          <span class="bar-segment safe"></span>
+          <span class="bar-segment normal"></span>
+          <span class="bar-segment strong"></span>
+          <span class="bar-segment lethal"></span>
+        </div>
+        <div class="concentration-scale">
+          <button data-level="3–12%" data-text="집중·수면·의료 목적으로 사용되는 저농도.">3–12%</button>
+          <button data-level="15–35%" data-text="무영시에서 가장 일반적으로 유통되는 농도.">15–35%</button>
+          <button data-level="36–55%" data-text="일부 시장에서만 거래되는 강력품.">36–55%</button>
+          <button data-level="56–80%" data-text="특이체질만 버틸 수 있으며 일반인에게는 독성 수준.">56–80%</button>
+          <button data-level="81%+" data-text="체질과 무관하게 생명을 위협하는 치명적 농도.">81%+</button>
+        </div>
+        <div class="concentration-info">
+          <strong id="dustLevel">15–35%</strong>
+          <p id="dustText">무영시에서 가장 일반적으로 유통되는 농도.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <p class="eyebrow reveal">YOUR STORY BEGINS HERE</p>
+      <h2 class="reveal">최약체 조직의<br><em>첫 번째 하루.</em></h2>
+      <p class="reveal">
+        네코다요가 낡은 책상 위로 정체불명의 서류봉투를 밀어 놓는다.<br>
+        오늘의 선택이 고양이냥냥파의 미래를 결정한다.
+      </p>
+      <div class="fake-dialogue reveal">
+        <span>💬 네코다요</span>
+        <p>“냥젤리부관, 우리도 슬슬 이름을 알려볼까?”</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>무영생존기</strong>
+      <p>비공식 세계관 소개 페이지</p>
+    </div>
+    <a href="#top">맨 위로 ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
